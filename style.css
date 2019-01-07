@@ -33,6 +33,10 @@ input,select{vertical-align:middle}
     background: #EEE;
 	border-radius: 5px;
 	z-index: 1000;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+
 }
 .window.closed {
 	display: none;
@@ -49,6 +53,7 @@ input,select{vertical-align:middle}
 }
 .fullSizeWindow .ui-resizable-handle {
 	display: none;
+
 }
 .windowHeader {
     background-color: #009c31;
@@ -115,6 +120,8 @@ input,select{vertical-align:middle}
     border: 2px solid #000;
     margin: 2px;
 	border-radius: 0 0 5px 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 .windowHeader > strong {
     float: left;

@@ -94,9 +94,10 @@ $(document).ready(function(){
 	$("#window" + (i-1)).addClass('activeWindow');
 	
 	$( ".wincontent" ).resizable();			// resizable
-	$( ".window" ).draggable({ cancel: ".wincontent" });	// draggable
-	
+	$( ".window" ).draggable({ cancel: ".wincontent"});
 
+	
+ 
     $(".window").mousedown(function(){		// active window on top (z-index 1000)
 		makeWindowActive($(this).attr("data-id"));
     });
